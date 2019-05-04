@@ -1,0 +1,40 @@
+{
+    "name": "scalpel/http",
+    "authors": [
+        {
+            "name": "Scalpel",
+            "email": "373966902@qq.com"
+        }
+    ],
+
+    "minimum-stability" : "dev",
+
+    "autoload": {
+        "psr-4": {
+            "j\\network\\http\\": "src/"
+        }
+    },
+
+    "repositories": [        
+        {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        },
+        {"packagist": false}
+    ],
+
+    "require": {
+        "php": ">=5.4.0",
+        "ext-swoole" : ">=1.8.6",
+        "scalpel/core" : "*"
+    },
+
+    "require-dev" : {
+        "scalpel/ide-doc" : "*",
+        "monolog/monolog" : "1.21.0"
+    },
+
+    "config" : {
+        "secure-http" : false
+    }
+}
